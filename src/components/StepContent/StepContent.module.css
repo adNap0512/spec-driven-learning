@@ -1,0 +1,49 @@
+.article {
+  line-height: 1.7;
+  max-width: 56rem;
+}
+
+.block {
+  margin-bottom: 1rem;
+}
+
+.h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0.75rem;
+  color: #0f172a;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.35rem;
+}
+
+.h2:first-child {
+  margin-top: 0;
+}
+
+.h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem;
+  color: #334155;
+}
+
+.hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.25rem 0;
+}
+
+.p {
+  margin: 0 0 0.5rem;
+  color: #475569;
+}
+
+.ul {
+  margin: 0.5rem 0 1rem 1.25rem;
+  padding: 0;
+  color: #475569;
+}
+
+.ul li {
+  margin-bottom: 0.35rem;
+}

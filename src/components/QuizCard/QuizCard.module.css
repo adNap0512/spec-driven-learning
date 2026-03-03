@@ -1,0 +1,132 @@
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.question {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+  color: #0f172a;
+  line-height: 1.5;
+}
+
+.options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.options li {
+  margin-bottom: 0.5rem;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  color: #334155;
+  font-size: 0.95rem;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.option:hover:not(:disabled) {
+  border-color: var(--primary);
+  background: #f0f9ff;
+}
+
+.option:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.option:disabled {
+  cursor: default;
+}
+
+.optionRevealed {
+  pointer-events: none;
+}
+
+.optionCorrect {
+  border-color: var(--success);
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.optionWrong {
+  border-color: #fca5a5;
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.optionMarker {
+  flex-shrink: 0;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.optionText {
+  flex: 1;
+  min-width: 0;
+}
+
+.badge {
+  flex-shrink: 0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(16, 185, 129, 0.2);
+  color: #065f46;
+}
+
+.badgeWrong {
+  flex-shrink: 0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.explanation {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.explanationCorrect {
+  border: 1px solid #a7f3d0;
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.explanationWrong {
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.explanation strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.explanation p {
+  margin: 0;
+  opacity: 0.95;
+}

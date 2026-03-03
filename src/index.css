@@ -1,0 +1,95 @@
+/* React学習サイトと同じカラーテーマ */
+:root {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #2c3e50;
+  background-color: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  /* React学習サイトのCSS変数に合わせる */
+  --primary: #0ea5e9;
+  --primary-dark: #0284c7;
+  --accent: #f59e0b;
+  --success: #10b981;
+  --sidebar-bg: #1e293b;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+  --color-sidebar-bg: #1e293b;
+  --color-sidebar-text: #e2e8f0;
+  --color-main-bg: #f8fafc;
+  --color-main-text: #0f172a;
+  --color-border: #e2e8f0;
+  --color-card-bg: #ffffff;
+  --color-accent: #0ea5e9;
+  --color-muted: #64748b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* 学習ページ用の追加スタイル */
+.learning-sidebar-header {
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 0.75rem;
+}
+
+.learning-sidebar-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  color: #fff;
+}
+
+.learning-main-inner {
+  max-width: 52rem;
+}
+
+.learning-step-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 1.25rem;
+  color: #0f172a;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary);
+}
+
+.learning-quiz-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.learning-quiz-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+  color: #0f172a;
+}
+
+.learning-quiz-section .card {
+  margin-bottom: 1.25rem;
+}
+
+.learning-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: var(--color-muted);
+}
